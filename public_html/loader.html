@@ -1,0 +1,22 @@
+<html>
+  <a href="index.html">back</a>
+
+   <script>
+      function hideLoader() {
+         document.getElementById('loader').style.display = 'none';
+         document.getElementById('contents').style.opacity = '1';
+      }
+   </script>
+
+  <h1 id="loader">
+      Loading...
+  </h1>
+
+  <div>
+    <iframe style="opacity: 0.3;" id="contents" src="./slow.php" onload="hideLoader()"></iframe>
+  </div>
+
+  <div>
+    End of page
+  </div>
+</html>
